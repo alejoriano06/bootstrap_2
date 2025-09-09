@@ -1,48 +1,166 @@
-/*! CONFIGURACION BASICA DE UN ARCHIVO CSS */
-
-/*! 1: TIPOGRAFIAS */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Configuración básica de un archivo css */
+/* 1. Tipografías */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-/*! 2: ICONOS */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
-/*! 3: ESTILO GENERALES */
-h1,h2,h3,h4,h5,h6{
+/* 2. Iconos */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+
+/* 3. Estilos Generales */
+
+/* TIPOGRAFIA PARA TITULOS */
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Montserrat", sans-serif;
 }
-p,a,button,input,li,label,select,textarea,span{
+
+/* TIPOGRAFIA PARA TEXTOS */
+
+p,
+a,
+button,
+li,
+label,
+input,
+select,
+textarea,
+span {
     font-family: "Raleway", sans-serif;
 }
-/*! 4: VARIABLES */
-:rot{
-    --primary-color :#e58411;
-    --gray-color : #f7f7f7;
-    --white-color : #fff;
-    --dark-color: #1e1e1e;
+
+/* 4. Variables */
+:root {
+    --primary-color: #e58411;
+    --gray-color: #f7f7f7;
+    --white-color: #ffffff;
+    --dark-color: #000000;
     --fs-title1: 80px;
     --fs-title2: 42px;
     --fs-title3: 24px;
     --fs-title4: 18px;
     --fs-text: 16px;
 }
-/*! 5: DESKTOP */
-header{
+
+
+/* 5. Desktop */
+header {
     width: 100%;
+    text-align: center;
     position: relative;
-    height: 100vh;
-    background: url(.../img/sofa.png.jpeg);
+    height: 180vh;
+    padding-top: 40px;
+    background: url('../img/pagina_inicio.jpeg');
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-position-x: center;
     background-position-y: bottom;
 }
 
-/*! 6: TABLET */
-@media screen and (min-width:768px) and (max-width:1000px ){
+header nav .logo {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header nav .logo:hover {
+    color: var(--white-color);
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+#navbarNav ul a {
+    color: var(--white-color);
+    font-size: var(--fs-text);
+    margin: 0 15px;
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    transition: .5s;
+}
+
+#navbarNav ul a:hover {
+    border-bottom: 1px solid var(--white-color);
 
 }
-/*! 7: SMARTPHONE */
-@media screen and (min-width:320px) and (max-width:767px ){
+
+header nav .bag-button {
+    background: transparent;
+    border: none;
+    color: var(--white-color);
+    font-size: 24px;
+    position: relative;
+}
+
+header .bag-button .counter-products {
+    width: 26px;
+    height: 26px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-size: var(--fs-text);
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+}
+
+#hero {
+    width: 100%;
+    text-align: center;
+    padding: 90px 200px;
+}
+#hero h2{
+    font-size: var(--fs-title1);
+    color: var(--white-color);
+    font-weight: 600;
 
 }
+#hero p{
+    color: var(--white-color);
+    font-size: var(--fs-title3);
+    padding: 40px 45px;
+
+
+}
+
+#hero form{
+    width: 100%;
+    position: relative;
+
+}
+
+#hero form input{
+    border-radius: 40px;
+    padding: 15px 65px 15px 20px;
+    width: 344px;
+    font-size: var(--fs-title4);
+    border: 2px solid #fff;
+    background: #ffffff3f;
+    color: var(--white-color);
+    outline: none;
+}
+#hero form input::placeholder{
+    color:  var(--white-color);
+}
+#hero form button{
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    color: var(--white-color);
+    position: absolute;
+}
+#hero form button{
+    position: relative;
+    right:60px ;
+}
+
+/* 6. Estilos responsive Tablet */
+@media screen and(min-width:768px) and (max-width:1068px) {}
+
+/* 7. Estilos responsive SmartPhone */
+@media screen and(min-width:320px) and (max-width:767px) {}
