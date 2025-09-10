@@ -323,6 +323,55 @@ header .bag-button .counter-products {
     color: #0d1b39;
 }
 
+#experiences{
+    width: 100%;
+    position: relative;
+    padding: 140px 0;
+}
+#experiences .cont-img{
+    position: relative;
+    left: -20px;
+}
+#experiences .cont-img img{
+    box-shadow: -15px 16px 15px -10px #c5a779;
+}
+
+#experiences .cont-img::before{
+    content: "";
+    width: 300px;
+    height: 400px;
+    background: #f7f7f7;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+    top: 80px;  
+}
+#experiences .cont-img::after{
+    content: "";
+    width: 50px;
+    height: 350px;
+    background: #f7f7f7;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+    top: 10%;
+}
+#experiences .cont-info{
+    padding: 20px 60px 0 0 ;
+
+}
+#experiences .cont-info h3{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: var(--fs-title4);
+}
+#experiences .cont-info p{
+    font-size: var(--fs-text);
+    color: var(--fs-text);
+}
+   
+
+
 /* 6. Estilos responsive Tablet */
 @media screen and(min-width:768px) and (max-width:1068px) {}
 
