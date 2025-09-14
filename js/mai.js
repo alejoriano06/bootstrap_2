@@ -6,7 +6,7 @@ $(document).ready(function(){
   infinite: true,
   arrows: true,
   speed: 300,
-  slidesToShow: 4,
+  slidesToShow: 2,
   slidesToScroll: 1,
   autoplay: true,
   responsive: [

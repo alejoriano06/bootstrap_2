@@ -513,14 +513,353 @@ header .bag-button .counter-products {
 #reviews .slick-arrow::before{
     color: #0d1b39  ;
 }
+.footer {
+  background-color: #f9fafb;   /* gris muy suave */
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #111;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 300px;
+}
+
+.footer-heading {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f97316; /* naranja suave, cámbialo si quieres */
+}
+
+.footer p,
+.footer a {
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+  margin: 4px 0;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #666;
+}
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1024px){
+header {
+    height: 140vh;
+}
+#navbarNav ul a {
+    font-size: 24px;
+}
+header nav .bag-button{
+    font-size: 40px;
+}
+#hero p {
+        font-size: 40px;
+}
+#hero form input {
+        width: 544px;
+        padding: 15px 65px 15px 20px;
+}
 
 
+header nav .logo{
+    font-size: 60px;
+}
 
+#chossing-us h2{
+    font-size: 60px;
+}
+
+.col-lg-3 {
+    text-align: center;
+    width: 100%;
+}
+#chossing-us h3 {
+    font-size: 45px;
+    margin-top: 50px;
+
+}
+#chossing-us p{
+    font-size: 35px;
+    margin-top: 60px;
+}
+#chossing-us a {
+    font-size: 35px;
+}
+#products h2{
+    font-size: var(--fs-title1);
+}
+#products ul {
+    width: 600px;
+    padding: 12px;
+}
+#products li button {
+    font-size: 25px;
+}
+#products .slick-arrow{
+    width: 70px;
+    height: 70px;
+}
+#experiences .cont-img {
+    margin-top: 700px;
+    left:200px;
+    max-width: 300px; 
+    width: 100%;      
+    height: auto;     
+    border-radius: 10px; 
+}
+.experiences .col-md-6 {
+   right: 200px;
    
 
+}
+#experiences .cont-info h3{
+    font-size: var(--fs-title2);
+    text-align: left;
+}
+#experiences .cont-info h2{
+    text-align: left;
+    font-size: 60px;
+}
+#experiences .cont-info p {
+    text-align: left;
+    font-size: 30px;
+}
+#experiences .cont-info a{
+    font-size: 25px;
+}
+.materials .col-md-6{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+#materials .cont-info h3{
+    font-size: var(--fs-title2);
+}
+#materials .cont-info h2{
+    font-size:60px;
+}
+#materials p{
+    font-size: 30px;
+}
+#materials a{
+    font-size: 25px;
+}
 
-/* 6. Estilos responsive Tablet */
-@media screen and(min-width:768px) and (max-width:1068px) {}
+.materials .cont-info {
+  margin-bottom: 30px; 
+}
 
-/* 7. Estilos responsive SmartPhone */
-@media screen and(min-width:320px) and (max-width:767px) {}
+.materials .cont-img .left {
+  display: flex;
+  gap: 15px; 
+  margin-top: 20px; 
+}
+
+.materials .cont-img .right {
+  max-width: 200px; 
+  border-radius: 8px;
+}
+
+.col-md-4{
+    width: 200%;
+} 
+#reviews h3{
+    font-size: var(--fs-title2);
+}
+#reviews h2{
+    font-size: 60px;
+}
+.footer p, .footer a{
+    font-size: 25px;
+}
+.footer-heading{
+    font-size: 25px;
+}
+.footer a{
+    font-size: 30px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* smartphone */
+@media screen and(min-width:320px) and (max-width:767px) {
+
+    header {
+    width: 140%;
+    height: 140vh;
+}
+#navbarNav ul a {
+    font-size: 24px;
+}
+header nav .bag-button{
+    font-size: 40px;
+}
+#hero p {
+        font-size: 40px;
+}
+#hero form input {
+        width: 544px;
+        padding: 15px 65px 15px 20px;
+}
+
+
+header nav .logo{
+    font-size: 60px;
+}
+
+#chossing-us h2{
+    font-size: 60px;
+}
+
+.col-lg-3 {
+    text-align: center;
+    width: 100%;
+}
+#chossing-us h3 {
+    font-size: 45px;
+    margin-top: 50px;
+
+}
+#chossing-us p{
+    font-size: 35px;
+    margin-top: 60px;
+}
+#chossing-us a {
+    font-size: 35px;
+}
+#products h2{
+    font-size: var(--fs-title1);
+}
+#products ul {
+    width: 600px;
+    padding: 12px;
+}
+#products li button {
+    font-size: 25px;
+}
+#products .slick-arrow{
+    width: 70px;
+    height: 70px;
+}
+#experiences .cont-img {
+    margin-top: 700px;
+    left:200px;
+    max-width: 300px; 
+    width: 100%;      
+    height: auto;     
+    border-radius: 10px; 
+}
+.experiences .col-md-6 {
+   right: 200px;
+   
+
+}
+#experiences .cont-info h3{
+    font-size: var(--fs-title2);
+    text-align: left;
+}
+#experiences .cont-info h2{
+    text-align: left;
+    font-size: 60px;
+}
+#experiences .cont-info p {
+    text-align: left;
+    font-size: 30px;
+}
+#experiences .cont-info a{
+    font-size: 25px;
+}
+.materials .col-md-6{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+#materials .cont-info h3{
+    font-size: var(--fs-title2);
+}
+#materials .cont-info h2{
+    font-size:60px;
+}
+#materials p{
+    font-size: 30px;
+}
+#materials a{
+    font-size: 25px;
+}
+
+.materials .cont-info {
+  margin-bottom: 30px; 
+}
+
+.materials .cont-img .left {
+  display: flex;
+  gap: 15px; 
+  margin-top: 20px; 
+}
+
+.materials .cont-img .right {
+  max-width: 200px; 
+  border-radius: 8px;
+}
+
+.col-md-4{
+    width: 200%;
+} 
+#reviews h3{
+    font-size: var(--fs-title2);
+}
+#reviews h2{
+    font-size: 60px;
+}
+.footer p, .footer a{
+    font-size: 25px;
+}
+.footer-heading{
+    font-size: 25px;
+}
+.footer a{
+    font-size: 30px;
+}
+
+
+
+
+}
+
+
+
+
+
