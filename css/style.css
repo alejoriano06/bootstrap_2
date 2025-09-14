@@ -717,142 +717,106 @@ header nav .logo{
 /* smartphone */
 @media screen and(min-width:320px) and (max-width:767px) {
 
+header {
+        height: 80vh;
+        padding-top: 10px;
+        background-position: center;
+    }
+
+    #hero {
+        padding: 20px 10px;
+    }
+
+    #hero h2 {
+        font-size: 32px;
+    }
+
+    #hero p {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    #hero form input {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    #hero form button {
+        right: 10px;
+        top: 7px;
+    }
+
+    section,
+    #products,
+    #experiences,
+    #materials,
+    #reviews,
+    footer {
+        padding: 40px 5px;
+        align-items: center;
+    }
+
+    #experiences {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 5px;
+    }
+
+    #experiences .cont-img {
+        left: 0;
+        margin-bottom: 15px;
+        max-width: 100vw;
+    }
+
+    #experiences .cont-img img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        box-shadow: none;
+    }
+
+    #experiences .cont-info {
+        padding: 0;
+        text-align: center;
+    }
+
+    #products ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        padding: 4px;
+    }
+
+    #reviews .card-review .cont-info {
+        width: 80%;
+        left: 1%;
+        right: 1%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    footer .terms {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+/* 6. Estilos responsive Tablet */
+/* @media screen  and (max-width:1068px) {
     header {
-    width: 140%;
-    height: 140vh;
-}
-#navbarNav ul a {
-    font-size: 24px;
-}
-header nav .bag-button{
-    font-size: 40px;
-}
-#hero p {
-        font-size: 40px;
-}
-#hero form input {
-        width: 544px;
-        padding: 15px 65px 15px 20px;
-}
+        height: 120vh;
+        font-size: var(--fs-title3);
 
-
-header nav .logo{
-    font-size: 60px;
-}
-
-#chossing-us h2{
-    font-size: 60px;
-}
-
-.col-lg-3 {
-    text-align: center;
-    width: 100%;
-}
-#chossing-us h3 {
-    font-size: 45px;
-    margin-top: 50px;
-
-}
-#chossing-us p{
-    font-size: 35px;
-    margin-top: 60px;
-}
-#chossing-us a {
-    font-size: 35px;
-}
-#products h2{
-    font-size: var(--fs-title1);
-}
-#products ul {
-    width: 600px;
-    padding: 12px;
-}
-#products li button {
-    font-size: 25px;
-}
-#products .slick-arrow{
-    width: 70px;
-    height: 70px;
-}
-#experiences .cont-img {
-    margin-top: 700px;
-    left:200px;
-    max-width: 300px; 
-    width: 100%;      
-    height: auto;     
-    border-radius: 10px; 
-}
-.experiences .col-md-6 {
-   right: 200px;
-   
-
-}
-#experiences .cont-info h3{
-    font-size: var(--fs-title2);
-    text-align: left;
-}
-#experiences .cont-info h2{
-    text-align: left;
-    font-size: 60px;
-}
-#experiences .cont-info p {
-    text-align: left;
-    font-size: 30px;
-}
-#experiences .cont-info a{
-    font-size: 25px;
-}
-.materials .col-md-6{
-  display: flex;
-  flex-direction: column; 
-  align-items: flex-start; 
-}
-#materials .cont-info h3{
-    font-size: var(--fs-title2);
-}
-#materials .cont-info h2{
-    font-size:60px;
-}
-#materials p{
-    font-size: 30px;
-}
-#materials a{
-    font-size: 25px;
-}
-
-.materials .cont-info {
-  margin-bottom: 30px; 
-}
-
-.materials .cont-img .left {
-  display: flex;
-  gap: 15px; 
-  margin-top: 20px; 
-}
-
-.materials .cont-img .right {
-  max-width: 200px; 
-  border-radius: 8px;
-}
-
-.col-md-4{
-    width: 200%;
+    }
 } 
-#reviews h3{
-    font-size: var(--fs-title2);
-}
-#reviews h2{
-    font-size: 60px;
-}
-.footer p, .footer a{
-    font-size: 25px;
-}
-.footer-heading{
-    font-size: 25px;
-}
-.footer a{
-    font-size: 30px;
-}
 
 
 
