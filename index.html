@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panto - Shop</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   
 
     <link rel="stylesheet" href="css/style.css">
@@ -27,19 +27,22 @@
             <div class="collapse navbar-collapse justify-content-center"  id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Furniture</a>
+                <a class="nav-link" href="#chossing-us">Furniture</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link" href="#products">Shop</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Abaout Us</a>
+                <a class="nav-link" href="#experiences">Abaout Us</a>
                 </li>
                   <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#materials">Contact</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#reviews">Reviews</a>
                 </li>
             </ul>
             </div>
@@ -51,7 +54,7 @@
         </nav>
 
         <div id="hero">
-            <div id="carouselHeroSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselHeroSlidesOnly" data-aos="fade-down" data-aos-duration="3000" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                     <h2>Make Your Iterior More Minimalistic & Modern</h2>
@@ -67,32 +70,32 @@
                     </div>
                 </div>
             </div>
-            <form action="#"><input type="text" placeholder="search furniture">
+            <form action="#" data-aos="fade-up"data-aos-duration="3000"><input type="text" placeholder="search furniture">
             <button><i class="bi bi-search"></i></button></form>
         </div>
     </header>
 
     <main>
-        <section id="chossing-us">
+        <section id="chossing-us" >
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 cold-md-6">
+                    <div class="col-lg-3 cold-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <h2>My choosing us</h2>
                     <br>
                     
                 </div>
-                <div class="col-lg-3 cold-md-6">
+                <div class="col-lg-3 cold-md-6" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">
                     <h3>Luxury facilities</h3>
                     <p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities. </p>
                     <a href="#">More info <i class="bi bi-arrow-right"></i></a>
                 </div>
-                <div class="col-lg-3 cold-md-6">
+                <div class="col-lg-3 cold-md-6" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
                     <h3>Affordable Price</h3>
                     <p>You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</p>
 
                     <a href="#">More info <i class="bi bi-arrow-right"></i></a>
                 </div>
-                <div class="col-lg-3 cold-md-6">
+                <div class="col-lg-3 cold-md-6" data-aos="fade-down" data-aos-delay="900" data-aos-duration="1000">
                     <h3>Many Choices</h3>
                     <p>We provide many unique work space choices so that you can choose the workspace to your liking.</p>
 
@@ -663,10 +666,10 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 cont-img">
+                    <div class="col-md-6 cont-img" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="1000">
                         <img src="img/sala 1.jpeg" alt="sofa">
                     </div>
-                    <div class="col-md-6 cont-info">
+                    <div class="col-md-6 cont-info" data-aos="fade-up-left" data-aos-delay="600" data-aos-duration="1000">
                         <h3>EXPERIENCES</h3>
                         <h2>We provide you the best experience</h2>
                         <p>You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials</p>
@@ -879,12 +882,10 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="js/mai.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    
 </body>
 </html>

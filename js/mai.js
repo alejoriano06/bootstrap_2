@@ -6,7 +6,7 @@ $(document).ready(function(){
   infinite: true,
   arrows: true,
   speed: 300,
-  slidesToShow: 2,
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
   responsive: [
@@ -79,5 +79,10 @@ $(document).ready(function(){
     // instead of a settings object
   ]
 });
+
+AOS.init();
+
+
+
 });
 
